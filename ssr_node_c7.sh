@@ -276,7 +276,7 @@ fi
 echo "System require a reboot to complete the installation process, press Y to continue, or press any key else to exit this script."
 read is_reboot
 if [[ ${is_reboot} == "y" || ${is_reboot} == "Y" ]]; then
-  reboot
+  reboot now
 else
   echo -e "Reboot has been canceled..."
 	exit 0
